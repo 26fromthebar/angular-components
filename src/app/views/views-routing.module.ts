@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: ViewsComponent,
-    children: [{ path: '', component: StatisticsComponent }],
+    // children: [{ path: '', component: StatisticsComponent }],
   },
 ];
 
