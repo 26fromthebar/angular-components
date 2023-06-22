@@ -7,11 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModsHomeComponent implements OnInit {
   modalOpen: boolean = false;
+  items = [
+    { title: 'Introduction', content: 'Welcome to our website!' },
+    {
+      title: 'About Us',
+      content: 'Learn more about our company and our mission.',
+    },
+    { title: 'Services', content: 'Discover the range of services we offer.' },
+    {
+      title: 'Contact Us',
+      content: 'Get in touch with our team for inquiries and support.',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
 
   onClick() {
-    this.modalOpen = true;
+    this.modalOpen = !this.modalOpen;
   }
 }
